@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7ebef;
+   text-align: center;
+   color: #333333;
+   font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: inherit;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.turns {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 3rem 0rem;
+}
+
+.boxes {
+    max-width: 350px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: -3px 7px 8px 0px #0000008b;
+    border: none;
+    background-color: white;
+    border: 2px solid #CCCCCC;
+    font-size: 3.5rem;
+    color: black;
+}
+
+.box:hover {
+    box-shadow: -1px 5px 6px 0px #0000008b;
+}
+
+
+.winner-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.winner-msg {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: #4a3b01;
+    padding-inline: 10px;
+}
+
+.new-game {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #10B981;
+    color: white;
+    border: none;
+    box-shadow: -3px 7px 8px 0px #0000008b;
+}
+
+.new-game:hover {
+    background-color: #0c8f63;
+    box-shadow: -2px 2px 3px 0px #0000008b;
+    color: white;
+}
+
+.reset-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #10B981;
+    color: white;
+    border: none;
+    box-shadow: -3px 7px 8px 0px #0000008b;
+    margin-top: 6rem ;
+}
+
+.reset-btn:hover {
+    background-color: #059669;
+    box-shadow: -2px 2px 3px 0px #0000008b;
+    color: #F1EFEC;
+}
+
+.win {
+    background-color: #bbf7d0;
+    border: 2px solid #22c55e;
+    box-shadow: 0 0 10px #22c55e;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; 
+        margin-top: 1rem;
+    }
+
+    .container {
+        padding: 1.2rem;
+    }
+
+    .turns {
+        font-size: 1.5rem; 
+        padding: 2rem 0;
+    }
+
+    .boxes {
+        max-width: 300px; 
+        min-height: 300px; 
+        gap: 7px;
+    }
+
+    .box {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem; 
+    }
+
+    .reset-btn, .new-game {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .winner-msg {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    .turns {
+        font-size: 1.3rem; 
+    }
+
+    .boxes {
+        gap: 8px;
+        max-width: 260px;
+        min-height: 260px;
+    }
+
+    .box {
+        font-size: 2rem; 
+    }
+
+    .reset-btn, .new-game {
+        font-size: 1.1rem;
+        padding: 0.7rem 1rem;
+    }
+
+    winner-msg {
+        font-size: 1.4rem;
+    }
+}
+
+
+.hide-winner-page {
+    display: none;
+}
+.hide-container {
+    display:none
+}
+
